@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💙 Christine💙</title>
+
+    <script src="assets/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/estilo.css">
+
+    <link rel="preload" as="image" href="imagens/fundo2.gif">
+    <link rel="preload" as="image" href="imagens/fundo3.gif">
+    <link rel="preload" as="image" href="imagens/fundo4.jpg">
+    <link rel="preload" as="image" href="imagens/fundo7.gif">
+    <link rel="preload" as="image" href="imagens/fundo9.gif">
+    <link rel="preload" as="audio" href="assets/musica.mp3">
+
+</head>
+<body class="fundo1">
+
+        <div class="pop-up">
+            <h1 class="text-muted">Test Title</h1>
+            <div>Test Description</div>
+            <section class="text-center">
+                <button class="btn-azul" onclick="mostraPopUp(false)">Close</button>
+            </section>
+        </div>
+    
+    <div class="container d-flex justify-content-center">
+
+        <div id="tela1" class="tela tela-centro visivel">
+            <h1 class="text-muted">Welcome</h1>
+            <p>Are you ready?</p>
+            <button class="mudaTela btn-azul">To Start</button>
+
+            <!--
+            <div class="mt-5">
+
+                <a href="#" class="opcoes">See options</a>
+                <div class="invisivel opcoes">
+                    <p>If you want, you can choose to start from a specific screen:</p>
+                    <button class="btn-rosa mudaTela" tela="">Start</button>
+                    <button class="btn-rosa">Messages</button>
+                    <button class="btn-rosa">Memorable Moments</button>
+                    <button class="btn-rosa">What you changed in me</button>
+                    <button class="btn-rosa">Our first conversation</button>
+                    <button class="btn-rosa">Memorial</button>
+                    <button class="btn-rosa">Declaration</button>
+                    <button class="btn-rosa">End</button>
+                </div>
+
+            </div>
+            -->
+
+        </div>
+
+        <div id="tela2" class="tela" fundo="fundo1">
+            <p class="text-muted"><small>Before starting, please confirm:</small>
+                <br>
+            <strong>Do you know this person?</strong></p>
+            <img src="imagens/EueEla.jpg" class="custom" width="150" alt="">
+            <br>
+
+            <button class="mudaTela btn-azul btn-block mt-5" animacao="null" tempoAnimacao="500">Yes</button>
+            <br>
+            <button class="btn-vermelho btn-block" onclick="alert('Then you shouldn’t be accessing this site. Get out, buddy!');window.location.href='https://www.dicio.com.br/trouxa/'; " >No</button>
+
+        </div>
+
+        <div id="tela3" class="tela">
+            <p><strong>Are you sure?</strong><br> Look closely:</p>
+            <img src="imagens/Nicrorreco.jpg" class="custom" width="150" alt="">
+
+            <br>
+            <button class="mudaTela btn-block btn-azul">Yes</button>
+            <br>
+            <button class="btn-block btn-vermelho" onclick="alert('Okay, I understand your embarrassment.');window.location.href='https://www.dicio.com.br/otario/'; " >I don’t know this perfection</button>
+        </div>
+
+        <div id="tela4" class="tela">
+            <h2>Wait...</h2>
+
+            <img src="imagens/tela4.jpg" class="custom mb-4" width="150" alt="">
+
+            <p>Is it <strong>Christine Ndlovu</strong> accessing this page now?
+                <!--<br><small class="text-muted" style="font-weight: 700;">Yes, Christine with a cute forehead and pretty smile</small>--!>
+            </p>
+
+            <button class="mudaTela btn-azul">Yes, It's me</button>
+            <button class="mudaTela btn-vermelho btn-block" onclick="alert('You should be ashamed of being here!\n
+Well, I know that even if I send you to another page, you’ll come back here later because your curiosity compels you to, so go on to the next page.');" >No, I'm a friend or acquaintance of Mike's girlfriend who is accessing this site, even though Mike would rather she doesn't share but it's cool.</button>
+        </div>
+
+        <div id="tela5" class="tela">
+            <p>For everything to go well, you need to be listening to the background music.</p>
+            <hr>
+            <p><small>When you are listening to it, click the button.</small></p>
+            <button class="mudaTela btn-azul">Continue</button>
+        </div>
+
+        <div id="tela6" class="invisivel letra2 temporizado tela-centro" fundo="fundo2" style="color: #FFF;" tempo="3000" >
+            <div tempo="3000">
+                <p>Well, let's go...</p>
+            </div>
+            <div tempo="3000">
+                <p>I wanted you to know a few things.</p>
+            </div>
+            <div tempo="3000" final="true">
+                <p>I made this for you.</p>
+            </div>
+        </div>
+
+        <div id="tela7" class="invisivel temporizado letra2 tela-centro" fundo="fundo3" style="color: #FFF;"  tempo="3000" >
+            <div tempo="3000">
+                <p>Sometimes it’s hard to imagine...</p>
+            </div>
+            <div tempo="2500">
+                <p>that someone can appear out of nowhere...</p>
+            </div>
+            <div tempo="2500">
+                <p>and in such a short time...</p>
+            </div>
+            <div tempo="3000">
+                <p>completely transform...</p>
+            </div>
+            <div tempo="4000" final="true">
+                <p>our perspective on life...</p>
+            </div>
+        </div>
+
+        <div id="tela8" class="tela-centro tela" fundo="fundo4" tempo="6000">
+         
+            <p>And I want to show you this</p>
+
+            <button class="mudaTela btn-rosa">Continue</button>
+
+        </div>
+
+        <div id="tela9" class="tela">
+         
+            <div class="text-start">
+                <div class="text-center">
+                    <h2 class="letra-vermelha">1. Messages</h2>
+                    <img src="imagens/mensagem1.jpg" alt="">
+                    <p class="letra2" style="font-size: 0.8em;"><strong>I am inlove with you and I want you to know, I've never visioned anything close to marriage with anyone other than you. Still the case.</strong></p>
+                </div>
+                <hr>
+                <p><strong class="letra-vermelha">And when I say i love you</strong> I love everything about you</p>
+                <p><strong class="letra-vermelha">Reminder!</strong> that we should be good to each other coz weve both been through it and are, our saviours to each other. I hope we always make each other fell this way.</p>
+                <img src="imagens/Mensagem2.jpg" alt="">
+                <p><strong class="letra-vermelha">Remember</strong> how much words are almost all we got, we should use them wisely. This is my favourite message because you shown me i can love, and have fun doing it, you make it easy to love you. i love that</p>
+                <p><strong class="letra-vermelha">We are strong</strong> enough to make it and have showed the world we are. Despite the distance youve fought for us and i fall for you more everyday. you stunning little mmm.. ALWAYS Remember what we have is unique and uncomparable. (I mean who makes websites for they girl tho?🤣😊)</p>
+
+            </div>
+
+            <button class="mudaTela btn-rosa mt-3">Continue</button>
+
+        </div>
+
+        <div id="tela10" class="tela">
+
+            <div class="text-start">
+                <div class="text-center">
+                    <h2 class="letra-vermelha">2. My Fav selfie</h2>
+                    <img src="imagens/FotoFavorita.jpg" alt="">
+                    <p class="letra2" style="font-size: 0.8em;"><strong>This is one of my favorite selfies of you.</strong></p>
+                </div>
+                <hr>
+                <p><span class="letra2 letra-vermelha" style="font-size: 1em;">I fell in love with you more than once.</span><br>Remember the many times I made a silly face and you smiled, <strong class="text-muted">a beautiful and so spontaneous smile</strong> and I thought <strong class="text-muted">"It's her, I have no doubts"</strong>.</p>
+                <p>Each one of those times i fell more and more. Ive said this but let me mention a few reasons i love you.</p>
+                <ul>
+                    <li><strong class="letra-vermelha">1</strong> - with you i feel at home. Like I can build a home thats gonna have a beautiful wife in it<strong class="text-muted"></strong></li>
+                    <li><strong class="letra-vermelha">2</strong> - I am grounded with you like I've never been. No single thought of any other woman just you. You live in my head and occupy all space</li>
+                    <li><strong class="letra-vermelha">3</strong> - You are my type lol. and need i mention the sex? We fuck like rabbits</li>
+                    <li><strong class="letra-vermelha">4, but not last</strong> - You are funny, smart, talkative, we rarely have nothing to talk about. We have a lot in common. Your personality? damn perfect<strong class="text-muted"><br>Damn im inlove with this girl and i just have no idea how to show it</strong></li>
+                </ul>
+
+                <hr>
+
+                <div class="text-center">
+                    <p>And this is just the beginning.</p>
+                    <p><strong class="text-muted">Our beginning.</strong></p>
+                </div>
+
+                
+
+            </div>
+
+            <button class="mudaTela btn-rosa mt-3">Continue</button>
+
+        </div>
+
+        <div id="tela11" class="tela">
+
+            <div class="text-left">
+                <div class="text-center">
+                    <h2 class="letra-vermelha">3. My Fav picture of us.</h2>
+                    <img src="imagens/us.jpeg" alt="">
+                    <p class="letra2" style="font-size: 0.8em;"><strong>It's so damn cute. send me your fav pic of us!</strong></p>    
+                </div>
+                <hr>
+                <p class="letra-vermelha"><strong>Here me out</strong></p>
+                <p>Before we started being together, My life was dull, you helped me grow as a person. Theres no better feeling than knowing that you are mine. It's a great feeling</p>
+                <p>The ring you gave me, I only wish I can give it back but a different one with me on my knees and you saying yes<strong class="letra-vermelha">I love</strong> that you love me my beautiful princess.</p>
+                <hr>
+                <p>Many times I've thought it aint worth it</p>
+                <p>Ive realised it has no possible worth unless we make it something</p>
+                <p class="letra-vermelha"><strong>And baby!! We have built something great. Now the challenge is to keep it. LETS FUCKIN DO IT BABY</strong></p>
+                <hr>
+                <p><strong class="letra-vermelha">You</strong> make me want to stay and give it a chance, to be closer and together with you.</p>
+                <p><strong class="letra-vermelha">You</strong> made me want to happy, push me to focus on my studies again, make me wanna stay healthy.</p>
+                <hr>
+                <p>Sometimes I catch myself thinking about what would have happened if I didn't have you.</p>
+                <p>No Joke I would have STIs by now lol. On a serious note, I would be longing for a chance at love and pretending I don't. I would probably be homeless on planet mars on a different galaxy. See i cant even begin to see myself without you </p>
+                <h3 class="letra-vermelha mt-5 mb-5">You do me good and also yerrr YOU DO ME GOOD 😜</h3>
+
+            </div>
+
+            <button class="mudaTela btn-rosa">Continue</button>
+
+        </div>
+
+        <div id="tela12" class="tela">
+            <h2 class="letra-vermelha">This is our anniversary date</h2>
+            <p>November 23.</p>
+
+            <img src="imagens/PrimeiraConversa.jpg" alt="">
+
+            <button class="mudaTela btn-rosa mt-3">Continue</button>
+        </div>
+
+        <div id="tela13" class="tela">
+            <h2 class="letra-vermelha">Extra romance</h2>
+            <p>As you know, I am a forgetful person, but I never forget moments that made my life happier...<br>... <strong class="letra-vermelha">like all the times you were with me.</strong></p>
+            <hr>
+
+            <button class="mudaTela btn-rosa mt-5">Continue</button>
+
+        </div>
+
+        <div id="tela14" class="invisivel temporizado letra2 tela-centro" fundo="fundo5" style="color: #FFF;" tempo="2000" >
+            <div tempo="3000">
+                <p>And just thinking...</p>
+            </div>
+            <div tempo="2500">
+                <p>where we started...</p>
+            </div>
+            <div tempo="3000" >
+                <img src="imagens/correio.jpg" class="custom" width="250" alt="">
+            </div>
+			<div tempo="3000">
+                <p>fyi was hard on that pic</p>
+            </div>
+            <div tempo="3000">
+                <p>And just thinking...</p>
+            </div>
+            <div tempo="4000">
+                <p>about everything we have and can still experience together...</p>
+            </div>
+            <div tempo="4000">
+                <p>It's scary beautiful.</p>
+            </div>
+            <div tempo="2500" final="true">
+                <p>You are my baby girl💙</p>
+            </div>
+        </div>
+
+        <div id="tela15" class="invisivel temporizado letra2 tela-centro" fundo="fundo11" style="color: #999;" tempo="2500" >
+            <div tempo="2000">
+                <p>Well...</p>
+            </div>
+            <div tempo="3500">
+                <p>I guess it's no longer possible to delay.</p>
+            </div>
+            <div tempo="3500" >
+                <p>I need to ask you the question.</p>
+            </div>
+            <div tempo="4000" final="true">
+                <p>Something I'm very sure to ask...</p>
+            </div>
+        </div>
+
+        <div id="tela16" class="tela tela-centro">
+            <h2 class="text-muted">Are you ready?</h2>
+            <p>When ready, just press the button.</p>
+
+            <button class="mudaTela btn-verde">I am ready</button>
+        </div>
+
+        <div id="tela17" class="invisivel temporizado letra2 tela-centro" fundo="" style="color: #999;" tempo="1500" >
+            <div tempo="2000">
+                <p>So...</p>
+            </div>
+            <div tempo="8000">
+                <p>now, answer me...</p>
+            </div>
+            <div tempo="8000" final="true">
+                <p>Do you wanna forever be with me? (tell me kuDM)💍</p>
+            </div>
+        </div>
+
+        <div id="tela18" class="tela tela-centro" fundo="">
+            <h2 class="text-muted mb-5 mt-2">What was the answer?</h2>
+            <button class="mudaTela btn-block btn-azul">YES</button>
+            <br>
+            <button class="btn-block btn-vermelho" onclick="alert('Haha joke, I know it was YES.');">NO</button>
+        </div>
+
+        <div id="tela19" class="tela">
+            <h2 class="mb-5" style="color: #CCC">In that case, we need to make babies</h2>
+            
+            
+        <!--<div id="tela20" class="invisivel temporizado letra2 tela-centro" fundo="fundo6" style="color: #FFF;" tempo="1500" >
+            <div tempo="2000" class="text-center">--!>
+                <p class="mb-0">Thats All. Thank you for being with me.</p>
+                <div class="text-center">
+                    <span style="font-size:0.4em; color: #555;">My Love</span>
+                <!--</div>--!>
+            <!--</div>--!>
+        </div>
+
+    </div>
+
+
+    
+
+    <!--<script src="assets/js/bootstrap.min.js"></script>-->
+
+    <script src="assets/script.js"></script>
+    <!--<script src="assets/all.min.js"></script>-->
+
+</body>
+</html>
